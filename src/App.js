@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Split from './composition/Split';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return ( //2 instances of <Split />
+    <main className='App'>
+      <Split className='left' flexBasis={3}>
+        This is the content for the left `Split`. Star, Sun, Moon, Earth, Ocean, Sky.
+      </Split>
+      <Split className='right' flexBasis={4}>
+        This is the content for the right `Split`. Dragon Prince Zym is awesome.
+      </Split>
+    </main>
   );
 }
 
