@@ -6,9 +6,17 @@ exports[`renders the UI as expected 1`] = `
 >
   Messages
   <div
-    className="unread_count"
+    className="unread_count badge"
   >
     4
   </div>
+</div>
+`;
+
+exports[`renders the UI as expected with no unreads 1`] = `
+<div
+  className="messages"
+>
+  Messages
 </div>
 `;
