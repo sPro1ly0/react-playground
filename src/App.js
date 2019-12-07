@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import Split from './composition/Split';
 import './App.css';
 import Tooltip from './composition/Tooltip';
+import Messages from './Messages';
 //testing intro example
+
+
 
 class AppClass extends Component {
   render() {
@@ -10,6 +13,9 @@ class AppClass extends Component {
       <div className="App">
         <h1>YOUR APPLICATION NAME!</h1>
         <div>Hello!</div>
+        
+        <Messages name="Messages" unread={0}/>
+        <Messages name="Notifications" unread={10}/>
       </div>
     );
   }
