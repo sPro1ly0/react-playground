@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Split from './composition/Split';
 import './App.css';
 import Tooltip from './composition/Tooltip';
+//testing intro example
+
+class AppClass extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>YOUR APPLICATION NAME!</h1>
+        <div>Hello!</div>
+      </div>
+    );
+  }
+}
 
 // make 2 tooltips here and another inside the App directly
 const firstTooltip = (
   <Tooltip color="hotpink" message='tooltip message'>
-   ipsum
+   ipsum {/*these are children*/}
   </Tooltip>
 )
 const secondTooltip = (
   <Tooltip color="#126BCC" message='another tooltip message'>
-    officiis
+    officiis {/*these are children*/}
   </Tooltip>
 )
 
@@ -22,7 +34,7 @@ function App() {
   This is the content for the left `Split`. Star, {firstTooltip} Sun, Moon, Earth, Ocean, Sky. 
         {/* make another tooltip directly inside the App */}
         <Tooltip message='one more tooltip message'>
-          Necessitatibus?
+          Necessitatibus? {/*these are children*/}
         </Tooltip>
       </Split>
       <Split className='right' flexBasis={4}>
@@ -32,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppClass;
