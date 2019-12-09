@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheDate Component renders the UI as expected 1`] = `
+<div>
+  12/9/2019, 4:36:19 PM
+</div>
+`;
+
+exports[`TheDate Component renders the UI as expected to 1`] = `
+<div>
+  12/9/2019, 4:25:07 PM
+</div>
+`;
