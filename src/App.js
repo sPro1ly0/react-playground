@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 //import Tooltip from './composition/Tooltip';
 //import Messages from './Messages';
-import TheDate from './state/TheDate';
+//import TheDate from './state/TheDate';
+import Counter from './state/Counter';
 //testing intro example
 
 
@@ -13,7 +14,7 @@ class AppClass extends Component {
     return (
       <div className="App">
         <h1>YOUR APP NAME!</h1>
-        <TheDate />
+        <Counter count={123} step={1}/>
         
       </div>
     );

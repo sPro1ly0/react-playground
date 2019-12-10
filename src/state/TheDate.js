@@ -8,11 +8,12 @@ class TheDate extends React.Component {
         console.log('constructor') //happens first once
     }
     //Component has been added to the DOM
+    //componentDidMount is a sensible place to put setTimeout or setInterval calls
     componentDidMount() {
         console.log('componentDidMount') //happened third
         this.interval = setInterval(() => {
             console.log('setInterval') //happens 4th, then render
-            this.setState({
+            this.setState({//use this.setState and pass in an object to merge over the top of the current state, like Object.assign
                 datetime: new Date() 
             })
         }, 1000)
