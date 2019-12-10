@@ -4,17 +4,24 @@ import './App.css';
 //import Tooltip from './composition/Tooltip';
 //import Messages from './Messages';
 //import TheDate from './state/TheDate';
-import Counter from './state/Counter';
+//import Counter from './state/Counter';
+import Tabs from './state/Tabs';
 //testing intro example
 
+const tabsProp = [
+  { name: 'First tab',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.' },
+  { name: 'Second tab',
+    content: 'Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.' },
+  { name: 'Third tab',
+    content: 'Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.' },
+];
 
-
-class AppClass extends Component {
+class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>YOUR APP NAME!</h1>
-        <Counter count={123} step={1}/>
+        <Tabs tabs={tabsProp}/>
         
       </div>
     );
@@ -52,4 +59,4 @@ class AppClass extends Component {
 //  );
 //}
 
-export default AppClass;
+export default App;
