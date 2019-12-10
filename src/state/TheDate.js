@@ -41,4 +41,4 @@ class TheDate extends React.Component {
 //everytime setState is called a new render is triggered
 //unmount won't happen until we unmount the component
 
-export default TheDate
+export default TheDate;
