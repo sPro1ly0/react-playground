@@ -6,9 +6,11 @@ export default function LangControls(props) {
     return (
         <LanguageContext.Consumer>
             {(value) => {
+                console.log(value);
                 return (
                     <>
                         <button
+                            onClick={() => props.onSetLang('en-GB')}
                             disabled={value.lang === 'en-GB'}
                         >
                             British{' '}
@@ -16,6 +18,7 @@ export default function LangControls(props) {
                         </button>
                         {' '}
                         <button
+                            onClick={() => props.onSetLang('en-US')}
                             disabled={value.lang === 'en-US'}
                         >
                             American{' '}
@@ -23,6 +26,7 @@ export default function LangControls(props) {
                         </button>
                         {' '}
                         <button
+                            onClick={() => props.onSetLang('ko')}
                             disabled={value.lang === 'ko'}
                         >
                             Korean{' '}
