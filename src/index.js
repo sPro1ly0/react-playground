@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RegistrationForm from './registrationForm/registrationForm';
+import App from './playingwithdanger/App';
+//import RegistrationForm from './registrationForm/registrationForm';
 //import AppLang from './lang-context/AppLang';
 //import App from './paltrows-power-toes/App';
 import './index.css';
@@ -10,4 +11,4 @@ import './index.css';
 //import RouletteGun from './state-drills/RouletteGun';
 
 ReactDOM.render(
-        <RegistrationForm />, document.getElementById('root'));
+        <App />, document.getElementById('root'));
