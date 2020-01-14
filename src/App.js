@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 //import Split from './composition/Split';
 import './App.css';
+import Under13 from './Accessiblity/Under13';
+//import Table from './Accessiblity/ItemGroup';
 //import Tooltip from './composition/Tooltip';
 //import Messages from './Messages';
 //import TheDate from './state/TheDate';
 //import Counter from './state/Counter';
 //import Tabs from './state/Tabs';
 //import Accordion from './state-drills/Accordion';
-import DemonymApp from './demonymapp/demonymApp';
+//import DemonymApp from './demonymapp/demonymApp';
 //testing intro example
 // const sections = [
 //   {
@@ -28,12 +30,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <DemonymApp />
+        <Under13 />
       </div>
     );
   }
 }
 
+// const winners = [
+//   {name: "Sally"}
+// ]
+
+// const losers = [
+//   {name: "Bill"}
+// ]
 
 //const tabsProp = [
 //  { name: 'First tab',
